@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.dark-mode-icon {
+    display: none;
+}
+
+.light-mode-icon {
+    display: none;
+}
+
+.light-mode-icon svg path {
+    stroke: white;
+}
+
+.typedtext {
+  margin-top: 20%;
+  border-right: 2px solid black;
+  animation: blinkTextCursor 800ms steps(44) infinite normal;
+  height: 40px;
+  margin-bottom: 55px;
+  color: #000;
+  display: block;
+}
+
+.dark .quick-links {
+    fill: black;
+}
+
+.quick-links {
+    fill: white;
+}
+
+body .image-cls-fix:after {
+    content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    height: 60px;
+    bottom: -30px;
+    background: white;
+    filter: blur(10px);
+    transition: all .2s ease;
+    border-radius: 20px;
+}
+
+body .image-cls-fix {
+    position: relative;
+}
+
+body.dark .image-cls-fix:after {
+     background: rgb(17 24 39/var(--tw-bg-opacity));
+}
+
+@media(min-width:1280px){
+  .image-cls-fix{
+    min-height:551.47px;
+  }
+}
+
+@media(min-width:1535px){
+  .image-cls-fix{
+    min-height:665px;
+  }
+}
+
+@media(max-width:768px){
+  .image-cls-fix{
+    min-height:363.76px;
+  }
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: black;
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
