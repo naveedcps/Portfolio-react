@@ -7,7 +7,7 @@ function Contact() {
                     <p className="mb-8 font-light text-center text-gray-500 lg:mb-16 dark:text-gray-400 sm:text-xl">
                         Got a technical issue? or want to build a new feature? any customizations in existing feature? Let me know.
                     </p>
-                    <form action="https://formspree.io/f/mgebjvyk" method="POST" className="space-y-8">
+                    <form action="https://formspree.io/f/xykdrknl" method="POST" className="space-y-8">
                         <div>
                             <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
                             <input
